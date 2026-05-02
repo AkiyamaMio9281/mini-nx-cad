@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "document": {
+    "name": "basic_rectangle_sketch",
+    "features": [
+      {
+        "dependencies": [],
+        "id": 1,
+        "name": "Sketch 1",
+        "sketch": {
+          "constraintIds": [],
+          "entities": [
+            {"end": {"x": 4, "y": 0}, "id": 1, "start": {"x": 0, "y": 0}, "type": 1},
+            {"end": {"x": 4, "y": 2}, "id": 2, "start": {"x": 4, "y": 0}, "type": 1},
+            {"end": {"x": 0, "y": 2}, "id": 3, "start": {"x": 4, "y": 2}, "type": 1},
+            {"end": {"x": 0, "y": 0}, "id": 4, "start": {"x": 0, "y": 2}, "type": 1}
+          ]
+        },
+        "type": 0
+      }
+    ],
+    "constraints": []
+  },
+  "assemblies": []
+}

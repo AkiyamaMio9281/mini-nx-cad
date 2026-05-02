@@ -1,0 +1,12 @@
+{
+  "id": "sketch_solver_rectangle",
+  "title": "Constrained rectangle solves deterministically",
+  "modules": ["sketch", "constraints", "solver"],
+  "sample": null,
+  "coveredBy": ["mnx_solver_tests"],
+  "expected": {
+    "solve": "converged",
+    "case": "rectangle dimensions and line direction constraints"
+  },
+  "notes": "Represents the baseline dimension-driven sketch scenario used in many CAD demos."
+}

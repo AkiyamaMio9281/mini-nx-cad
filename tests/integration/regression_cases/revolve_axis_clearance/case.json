@@ -1,0 +1,12 @@
+{
+  "id": "revolve_axis_clearance",
+  "title": "Revolve rejects profiles that cross the revolve axis",
+  "modules": ["geometry", "modeling"],
+  "sample": "samples/parts/revolve_pin.mnx.json",
+  "coveredBy": ["mnx_modeling_tests"],
+  "expected": {
+    "validProfile": "profile remains on one side of the axis",
+    "axisCrossingProfile": "rebuild failure with diagnostics"
+  },
+  "notes": "Protects the simple revolve builder from producing self-intersecting display bodies."
+}

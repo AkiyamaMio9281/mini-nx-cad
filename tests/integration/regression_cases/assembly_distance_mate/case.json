@@ -1,0 +1,12 @@
+{
+  "id": "assembly_distance_mate",
+  "title": "Assembly distance mate moves the second component deterministically",
+  "modules": ["assembly", "persistence"],
+  "sample": "samples/assemblies/two_box_assembly.mnx_assembly.json",
+  "coveredBy": ["mnx_assembly_tests"],
+  "expected": {
+    "solve": "success",
+    "behavior": "second component origin is placed at requested distance from first"
+  },
+  "notes": "Documents the current mate solver contract: deterministic first-pass placement, not full DOF solving."
+}

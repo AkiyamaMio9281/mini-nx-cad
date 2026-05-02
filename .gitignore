@@ -1,0 +1,36 @@
+# Build and CMake output
+build/
+build-*/
+out/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+/Testing/
+
+# Compiler and binary artifacts
+*.a
+*.dll
+*.exe
+*.lib
+*.obj
+*.o
+*.pdb
+*.so
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Editor and local machine files
+.idea/
+.vscode/
+*.suo
+*.user
+*.vcxproj.user
+
+# Generated demo/script outputs
+*.stl
+*.mnx.generated.json
+samples/parts/scripted_bracket.*

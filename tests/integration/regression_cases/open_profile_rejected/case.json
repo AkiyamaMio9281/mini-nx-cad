@@ -1,0 +1,12 @@
+{
+  "id": "open_profile_rejected",
+  "title": "Open sketch profiles are rejected by extrude",
+  "modules": ["sketch", "modeling"],
+  "sample": null,
+  "coveredBy": ["mnx_modeling_tests"],
+  "expected": {
+    "rebuild": "failure",
+    "diagnostic": "profile is open or unsupported"
+  },
+  "notes": "Prevents invalid profile inputs from silently producing unstable meshes or topology."
+}

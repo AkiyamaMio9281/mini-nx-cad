@@ -1,0 +1,12 @@
+{
+  "id": "topology_broken_loop",
+  "title": "Topology validator catches broken loop conditions",
+  "modules": ["topology"],
+  "sample": null,
+  "coveredBy": ["mnx_topology_tests"],
+  "expected": {
+    "validator": "failure",
+    "condition": "loop has too few coedges or references invalid topology"
+  },
+  "notes": "Keeps simplified topology honest by rejecting obviously invalid structural states."
+}

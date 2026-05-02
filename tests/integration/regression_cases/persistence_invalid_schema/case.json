@@ -1,0 +1,12 @@
+{
+  "id": "persistence_invalid_schema",
+  "title": "Unsupported schema versions fail gracefully",
+  "modules": ["persistence"],
+  "sample": null,
+  "coveredBy": ["mnx_persistence_tests"],
+  "expected": {
+    "load": "failure",
+    "diagnostic": "unsupported schema version"
+  },
+  "notes": "Persistence must reject unknown project versions without crashing or partially mutating document state."
+}

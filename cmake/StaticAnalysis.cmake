@@ -1,0 +1,12 @@
+function(mnx_enable_static_analysis target)
+    if(NOT MNX_ENABLE_CLANG_TIDY)
+        return()
+    endif()
+
+    find_program(CLANG_TIDY_EXE NAMES clang-tidy)
+    if(CLANG_TIDY_EXE)
+        set_target_properties(${target} PROPERTIES CXX_CLANG_TIDY "${CLANG_TIDY_EXE}")
+    else()
+        message(WARNING "MNX_ENABLE_CLANG_TIDY is ON, but clang-tidy was not found.")
+    endif()
+endfunction()

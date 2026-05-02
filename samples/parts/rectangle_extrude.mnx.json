@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "document": {
+    "name": "rectangle_extrude",
+    "features": [
+      {
+        "dependencies": [],
+        "id": 1,
+        "name": "Profile Sketch",
+        "sketch": {
+          "constraintIds": [1],
+          "entities": [
+            {"end": {"x": 4, "y": 0}, "id": 1, "start": {"x": 0, "y": 0}, "type": 1},
+            {"end": {"x": 4, "y": 2}, "id": 2, "start": {"x": 4, "y": 0}, "type": 1},
+            {"end": {"x": 0, "y": 2}, "id": 3, "start": {"x": 4, "y": 2}, "type": 1},
+            {"end": {"x": 0, "y": 0}, "id": 4, "start": {"x": 0, "y": 2}, "type": 1}
+          ]
+        },
+        "type": 0
+      },
+      {
+        "dependencies": [1],
+        "distance": 1.5,
+        "id": 2,
+        "name": "Extrude 1",
+        "profileSketchFeatureId": 1,
+        "type": 1
+      }
+    ],
+    "constraints": [
+      {
+        "driving": true,
+        "id": 1,
+        "label": "Bottom horizontal",
+        "refs": [{"entityId": 1, "kind": 0}],
+        "type": 1
+      }
+    ]
+  },
+  "assemblies": []
+}

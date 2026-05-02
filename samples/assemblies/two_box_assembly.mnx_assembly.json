@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "assembly": {
+    "name": "two_box_assembly",
+    "components": [
+      {
+        "id": 1,
+        "name": "Box:1",
+        "sourceDocumentName": "rectangle_extrude",
+        "transform": {
+          "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+        }
+      },
+      {
+        "id": 2,
+        "name": "Box:2",
+        "sourceDocumentName": "rectangle_extrude",
+        "transform": {
+          "matrix": [1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+        }
+      }
+    ],
+    "mates": [
+      {
+        "distance": 3,
+        "firstComponentId": 1,
+        "firstLocalDirection": {"x": 1, "y": 0, "z": 0},
+        "firstLocalPoint": {"x": 0, "y": 0, "z": 0},
+        "fixedTransform": {
+          "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+        },
+        "id": 1,
+        "label": "Box spacing",
+        "secondComponentId": 2,
+        "secondLocalDirection": {"x": 1, "y": 0, "z": 0},
+        "secondLocalPoint": {"x": 0, "y": 0, "z": 0},
+        "type": 2
+      }
+    ]
+  }
+}

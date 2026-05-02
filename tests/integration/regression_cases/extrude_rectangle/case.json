@@ -1,0 +1,13 @@
+{
+  "id": "extrude_rectangle",
+  "title": "Closed rectangle profile rebuilds to a stable extrude body",
+  "modules": ["sketch", "modeling", "topology", "persistence"],
+  "sample": "samples/parts/rectangle_extrude.mnx.json",
+  "coveredBy": ["mnx_modeling_tests", "mnx_persistence_tests", "mnx_scripting_tests"],
+  "expected": {
+    "rebuild": "success",
+    "profile": "closed rectangle",
+    "body": "display mesh and simplified topology are generated"
+  },
+  "notes": "Protects the primary demo workflow: sketch a closed rectangle, extrude it, persist it, and rebuild it."
+}

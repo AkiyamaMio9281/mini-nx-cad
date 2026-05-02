@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "document": {
+    "name": "revolve_pin",
+    "features": [
+      {
+        "dependencies": [],
+        "id": 1,
+        "name": "Revolve Profile",
+        "sketch": {
+          "constraintIds": [],
+          "entities": [
+            {"end": {"x": 2, "y": 0}, "id": 1, "start": {"x": 1, "y": 0}, "type": 1},
+            {"end": {"x": 2, "y": 1}, "id": 2, "start": {"x": 2, "y": 0}, "type": 1},
+            {"end": {"x": 1, "y": 1}, "id": 3, "start": {"x": 2, "y": 1}, "type": 1},
+            {"end": {"x": 1, "y": 0}, "id": 4, "start": {"x": 1, "y": 1}, "type": 1}
+          ]
+        },
+        "type": 0
+      },
+      {
+        "angleRadians": 6.283185307179586,
+        "axis": {
+          "direction": {"x": 0, "y": 1},
+          "origin": {"x": 0, "y": 0}
+        },
+        "dependencies": [1],
+        "id": 2,
+        "name": "Revolve 1",
+        "profileSketchFeatureId": 1,
+        "type": 2
+      }
+    ],
+    "constraints": []
+  },
+  "assemblies": []
+}
