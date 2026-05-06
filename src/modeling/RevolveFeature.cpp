@@ -76,7 +76,7 @@ FeatureResult RevolveFeature::execute(FeatureContext& context) {
         return result;
     }
 
-    const RevolveBuilder builder;
+    const RevolveBuilder builder{};
     Result<RevolveBuildResult> buildResult = builder.buildRevolve(id(), *sketch, axis_, angleRadians_);
     if(!buildResult) {
         FeatureResult result = FeatureResult::failure(buildResult.status());

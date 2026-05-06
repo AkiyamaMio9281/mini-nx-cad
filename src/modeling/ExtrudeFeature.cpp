@@ -61,7 +61,7 @@ FeatureResult ExtrudeFeature::execute(FeatureContext& context) {
         return result;
     }
 
-    const ExtrudeBuilder builder;
+    const ExtrudeBuilder builder{};
     Result<ExtrudeBuildResult> buildResult = builder.buildBlindExtrude(id(), *sketch, distance_);
     if(!buildResult) {
         FeatureResult result = FeatureResult::failure(buildResult.status());

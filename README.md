@@ -85,14 +85,14 @@ Useful options:
 -DMNX_ENABLE_CLANG_TIDY=ON
 ```
 
-In this development environment, CMake was not available on PATH, so verification has also been done with direct `g++` compile commands for non-Qt modules.
+On MSVC builds, the CMake configuration enables `/Zc:__cplusplus` so Qt 6 receives the correct C++ standard feature macro.
 
 ## Test
 
 With CMake:
 
 ```bash
-ctest --test-dir build --output-on-failure
+ctest --test-dir build --output-on-failure -C Debug
 ```
 
 The current suite covers:
